@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blueprint Builds — Custom PCs, Explained Before You Buy</title>
+<meta name="description" content="Custom-built computers, explained part by part. See what's inside, why it matters, and what it costs — before you spend a cent.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav-mark" aria-label="Blueprint Builds home">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 9H19M9 14H19M9 19H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span><!-- EDIT: your business name --></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#why">Why us</a></li>
+      <li><a href="#anatomy">How it works</a></li>
+      <li><a href="#builds">Builds &amp; pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#builds" class="btn btn-ghost nav-cta">See the builds</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinksMobile" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <ul class="nav-links-mobile" id="navLinksMobile">
+    <li><a href="#why">Why us</a></li>
+    <li><a href="#anatomy">How it works</a></li>
+    <li><a href="#builds">Builds &amp; pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-copy">
+      <p class="hero-kicker">A computer, opened up before you buy it</p>
+      <h1>I build the computer,<br>then I show you what's inside.</h1>
+      <p class="hero-sub">
+        <!-- EDIT: your intro pitch --> No upsells, no filler parts, no guessing what you're paying for.
+        Every build on this page is drawn out part by part, so you know exactly what's going into your machine —
+        and exactly why it costs what it does.
+      </p>
+      <div class="hero-actions">
+        <a href="#builds" class="btn btn-primary">Compare the three builds</a>
+        <a href="#anatomy" class="btn btn-text">See what each part does →</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt><!-- EDIT --><span class="stat-num" data-count="6">0</span>+</dt><dd>years building</dd></div>
+        <div><dt><!-- EDIT --><span class="stat-num" data-count="300">0</span>+</dt><dd>machines shipped</dd></div>
+        <div><dt><!-- EDIT --><span class="stat-num" data-count="2">0</span></dt><dd>day avg. turnaround</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-diagram" aria-hidden="true">
+      <svg viewBox="0 0 420 520" class="tower-svg">
+        <!-- case -->
+        <rect x="110" y="30" width="200" height="460" rx="10" class="case-outline"/>
+        <circle cx="290" cy="52" r="5" class="case-detail"/>
+        <line x1="130" y1="52" x2="230" y2="52" class="case-detail"/>
+
+        <!-- motherboard -->
+        <rect x="128" y="64" width="164" height="240" class="board-outline"/>
+
+        <!-- storage : long-term memory -->
+        <g class="hw-group">
+          <rect x="140" y="76" width="34" height="20" class="hw-block"/>
+          <path d="M174 86 H 60" class="leader" style="--d:1"/>
+          <text x="52" y="90" class="leader-label" text-anchor="end">Storage</text>
+          <text x="52" y="104" class="leader-sub" text-anchor="end">long-term memory</text>
+        </g>
+
+        <!-- cpu : brain -->
+        <g class="hw-group">
+          <rect x="195" y="100" width="42" height="42" class="hw-block hw-block-accent"/>
+          <path d="M237 121 H 360" class="leader" style="--d:2"/>
+          <text x="368" y="118" class="leader-label">CPU</text>
+          <text x="368" y="132" class="leader-sub">the brain</text>
+        </g>
+
+        <!-- ram : short-term memory -->
+        <g class="hw-group">
+          <rect x="248" y="96" width="9" height="66" class="hw-block"/>
+          <rect x="262" y="96" width="9" height="66" class="hw-block"/>
+          <path d="M271 116 H 360" class="leader" style="--d:3"/>
+          <text x="368" y="168" class="leader-label">RAM</text>
+          <text x="368" y="182" class="leader-sub">short-term memory</text>
+        </g>
+
+        <!-- gpu : eyes -->
+        <g class="hw-group">
+          <rect x="140" y="238" width="152" height="38" class="hw-block hw-block-accent"/>
+          <path d="M140 257 H 60" class="leader" style="--d:4"/>
+          <text x="52" y="253" class="leader-label" text-anchor="end">GPU</text>
+          <text x="52" y="267" class="leader-sub" text-anchor="end">the eyes</text>
+        </g>
+
+        <!-- psu : heart -->
+        <g class="hw-group">
+          <rect x="128" y="432" width="164" height="46" class="hw-block"/>
+          <path d="M292 455 H 360" class="leader" style="--d:5"/>
+          <text x="368" y="452" class="leader-label">Power supply</text>
+          <text x="368" y="466" class="leader-sub">the heart</text>
+        </g>
+
+        <!-- cooling : lungs -->
+        <g class="hw-group">
+          <circle cx="209" cy="40" r="15" class="hw-block-ring"/>
+          <circle cx="209" cy="40" r="4" class="hw-block-ring-dot"/>
+          <path d="M209 25 V -18" class="leader leader-up" style="--d:6"/>
+          <text x="209" y="-24" class="leader-label" text-anchor="middle">Cooling — the lungs</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="why" id="why">
+    <div class="why-intro">
+      <h2>Why buy a computer from me?</h2>
+      <p><!-- EDIT: your founder story / value prop -->
+        Anyone can hand you a spec sheet. I'd rather hand you a diagram. I've spent
+        <!-- EDIT: years --> six years building machines for people who don't want to become
+        hardware experts just to buy one — so I do the part where I open the case, and you do the part
+        where you tell me what you actually need the computer to do.
+      </p>
+    </div>
+    <ul class="why-grid">
+      <li>
+        <h3>You see every part</h3>
+        <p>Every build lists exactly what's inside it and what each piece cost — nothing bundled or hidden in a lump sum.</p>
+      </li>
+      <li>
+        <h3>Picked for your build, not my shelf</h3>
+        <p>Parts are chosen for what your machine needs to do, not what happens to be sitting in a bin.</p>
+      </li>
+      <li>
+        <h3>Support after the sale</h3>
+        <p><!-- EDIT: your support terms -->If something's wrong, you call the person who built it — not a queue.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= ANATOMY / ANALOGY ================= -->
+  <section class="anatomy" id="anatomy">
+    <div class="anatomy-intro">
+      <h2>Think of your computer as a body</h2>
+      <p>Seven parts, seven jobs. Pick a point on the diagram to see what it does and why it's there.</p>
+    </div>
+
+    <div class="anatomy-diagram">
+      <!-- radio-driven, no JS required -->
+      <input type="radio" name="organ" id="organ-cpu" class="organ-input" checked>
+      <input type="radio" name="organ" id="organ-gpu" class="organ-input">
+      <input type="radio" name="organ" id="organ-ram" class="organ-input">
+      <input type="radio" name="organ" id="organ-storage" class="organ-input">
+      <input type="radio" name="organ" id="organ-mobo" class="organ-input">
+      <input type="radio" name="organ" id="organ-psu" class="organ-input">
+      <input type="radio" name="organ" id="organ-cooling" class="organ-input">
+
+      <div class="anatomy-figure">
+        <svg viewBox="0 0 300 480" aria-hidden="true">
+          <ellipse cx="150" cy="55" rx="34" ry="38" class="figure-line"/>
+          <rect x="140" y="90" width="20" height="16" class="figure-line"/>
+          <path d="M110 260 Q100 150 150 106 Q200 150 190 260 Q195 300 175 310 L125 310 Q105 300 110 260 Z" class="figure-line"/>
+          <path d="M110 150 L55 230 M190 150 L245 230" class="figure-line"/>
+          <path d="M128 310 L118 460 M172 310 L182 460" class="figure-line"/>
+          <line x1="150" y1="106" x2="150" y2="305" class="figure-spine"/>
+        </svg>
+
+        <label for="organ-cpu" class="hotspot hotspot-cpu" style="top:14%; left:50%;">
+          <span class="sr-only">CPU — the brain</span>
+        </label>
+        <label for="organ-gpu" class="hotspot hotspot-gpu" style="top:12%; left:61%;">
+          <span class="sr-only">GPU — the eyes</span>
+        </label>
+        <label for="organ-ram" class="hotspot hotspot-ram" style="top:12%; left:39%;">
+          <span class="sr-only">RAM — short-term memory</span>
+        </label>
+        <label for="organ-mobo" class="hotspot hotspot-mobo" style="top:44%; left:50%;">
+          <span class="sr-only">Motherboard — the nervous system</span>
+        </label>
+        <label for="organ-psu" class="hotspot hotspot-psu" style="top:30%; left:44%;">
+          <span class="sr-only">Power supply — the heart</span>
+        </label>
+        <label for="organ-cooling" class="hotspot hotspot-cooling" style="top:30%; left:60%;">
+          <span class="sr-only">Cooling — the lungs</span>
+        </label>
+        <label for="organ-storage" class="hotspot hotspot-storage" style="top:58%; left:66%;">
+          <span class="sr-only">Storage — long-term memory</span>
+        </label>
+      </div>
+
+      <div class="panels">
+        <div class="panel panel-cpu">
+          <p class="panel-eyebrow">Brain</p>
+          <h3>CPU</h3>
+          <p>The part that thinks. Every calculation and decision your computer makes passes through here first, one instruction at a time, thousands of times a second.</p>
+          <p class="panel-spec"><!-- EDIT: default spec note -->Faster cores mean less waiting — especially for anything you can't run on a video card.</p>
+        </div>
+        <div class="panel panel-gpu">
+          <p class="panel-eyebrow">Eyes</p>
+          <h3>GPU</h3>
+          <p>What renders the world you actually see — every frame, texture, and color on screen. If the CPU decides what should happen, the GPU is what shows you it happening.</p>
+          <p class="panel-spec"><!-- EDIT -->The part to spend on if you game, edit video, or run anything visual.</p>
+        </div>
+        <div class="panel panel-ram">
+          <p class="panel-eyebrow">Short-term memory</p>
+          <h3>RAM</h3>
+          <p>Holds whatever you're doing right now — open tabs, open programs, the document you haven't saved. Close the lid, and it's gone. That's the trade: it's fast because it doesn't have to remember forever.</p>
+          <p class="panel-spec"><!-- EDIT -->More of it means more things open at once without slowing down.</p>
+        </div>
+        <div class="panel panel-storage">
+          <p class="panel-eyebrow">Long-term memory</p>
+          <h3>Storage</h3>
+          <p>Everything you keep — photos, files, the game you haven't finished. Unlike RAM, it holds on after the power's off. It's the filing cabinet, not the desk.</p>
+          <p class="panel-spec"><!-- EDIT -->Solid-state storage reads faster; it's why your computer boots in seconds, not minutes.</p>
+        </div>
+        <div class="panel panel-mobo">
+          <p class="panel-eyebrow">Nervous system</p>
+          <h3>Motherboard</h3>
+          <p>Connects every other part to every other part. No signal, no power, and no data moves through this machine without passing across it first.</p>
+          <p class="panel-spec"><!-- EDIT -->Unglamorous, but it decides what you're allowed to upgrade later.</p>
+        </div>
+        <div class="panel panel-psu">
+          <p class="panel-eyebrow">Heart</p>
+          <h3>Power supply</h3>
+          <p>Pumps power to every other part, converted down from the wall to exactly what each component can safely take. Nothing above runs without it.</p>
+          <p class="panel-spec"><!-- EDIT -->Worth not skimping on — it's the one part that can take others down with it.</p>
+        </div>
+        <div class="panel panel-cooling">
+          <p class="panel-eyebrow">Lungs</p>
+          <h3>Cooling</h3>
+          <p>Moves heat out before it builds up. Every part above generates warmth just by working — cooling is what lets them keep working under pressure instead of slowing down to protect themselves.</p>
+          <p class="panel-spec"><!-- EDIT -->Quieter, better cooling usually means a machine that stays fast under load.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BUILDS / PRICING ================= -->
+  <section class="builds" id="builds">
+    <div class="builds-intro">
+      <h2>Three builds, laid out part by part</h2>
+      <p>Same honesty at every price. Pick where you land, or use these as a starting point and swap parts freely.</p>
+    </div>
+
+    <div class="stages" aria-hidden="true">
+      <span class="stage">Sketch</span>
+      <span class="stage-line"></span>
+      <span class="stage">Draft</span>
+      <span class="stage-line"></span>
+      <span class="stage">Final</span>
+    </div>
+
+    <div class="compare" role="table" aria-label="Comparison of three computer builds">
+
+      <div class="compare-row compare-head" role="row">
+        <div class="compare-cell compare-label" role="columnheader"></div>
+        <div class="compare-cell compare-tier" role="columnheader">
+          <h3>Sketch Build</h3>
+          <p>Everyday computing, done properly</p>
+        </div>
+        <div class="compare-cell compare-tier compare-tier-featured" role="columnheader">
+          <span class="tier-badge">Most chosen</span>
+          <h3>Draft Build</h3>
+          <p>Gaming and creative work, no compromises that matter</p>
+        </div>
+        <div class="compare-cell compare-tier" role="columnheader">
+          <h3>Final Build</h3>
+          <p>Top of the range, built to stay that way for years</p>
+        </div>
+      </div>
+
+      <div class="compare-row" role="row" data-label="Processor">
+        <div class="compare-cell compare-label" role="rowheader">Processor <span>brain</span></div>
+        <div class="compare-cell" role="cell" data-label="Processor"><!-- EDIT: CPU + price -->[Your CPU pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Processor"><!-- EDIT -->[Your CPU pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Processor"><!-- EDIT -->[Your CPU pick] — $[price]</div>
+      </div>
+
+      <div class="compare-row" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Graphics <span>eyes</span></div>
+        <div class="compare-cell" role="cell" data-label="Graphics"><!-- EDIT -->[Your GPU pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Graphics"><!-- EDIT -->[Your GPU pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Graphics"><!-- EDIT -->[Your GPU pick] — $[price]</div>
+      </div>
+
+      <div class="compare-row" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Memory <span>short-term</span></div>
+        <div class="compare-cell" role="cell" data-label="Memory"><!-- EDIT -->[RAM amount] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Memory"><!-- EDIT -->[RAM amount] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Memory"><!-- EDIT -->[RAM amount] — $[price]</div>
+      </div>
+
+      <div class="compare-row" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Storage <span>long-term</span></div>
+        <div class="compare-cell" role="cell" data-label="Storage"><!-- EDIT -->[Storage pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Storage"><!-- EDIT -->[Storage pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Storage"><!-- EDIT -->[Storage pick] — $[price]</div>
+      </div>
+
+      <div class="compare-row" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Motherboard <span>nervous system</span></div>
+        <div class="compare-cell" role="cell" data-label="Motherboard"><!-- EDIT -->[Board pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Motherboard"><!-- EDIT -->[Board pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Motherboard"><!-- EDIT -->[Board pick] — $[price]</div>
+      </div>
+
+      <div class="compare-row" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Power supply <span>heart</span></div>
+        <div class="compare-cell" role="cell" data-label="Power supply"><!-- EDIT -->[PSU pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Power supply"><!-- EDIT -->[PSU pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Power supply"><!-- EDIT -->[PSU pick] — $[price]</div>
+      </div>
+
+      <div class="compare-row" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Cooling <span>lungs</span></div>
+        <div class="compare-cell" role="cell" data-label="Cooling"><!-- EDIT -->[Cooling pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Cooling"><!-- EDIT -->[Cooling pick] — $[price]</div>
+        <div class="compare-cell" role="cell" data-label="Cooling"><!-- EDIT -->[Cooling pick] — $[price]</div>
+      </div>
+
+      <div class="compare-row compare-total" role="row">
+        <div class="compare-cell compare-label" role="rowheader">Total</div>
+        <div class="compare-cell" role="cell" data-label="Total"><span class="price"><!-- EDIT -->$[XXX]</span></div>
+        <div class="compare-cell" role="cell" data-label="Total"><span class="price"><!-- EDIT -->$[XXX]</span></div>
+        <div class="compare-cell" role="cell" data-label="Total"><span class="price"><!-- EDIT -->$[XXX]</span></div>
+      </div>
+
+      <div class="compare-row compare-cta" role="row">
+        <div class="compare-cell compare-label" role="cell"></div>
+        <div class="compare-cell" role="cell"><a href="#contact" class="btn btn-outline">Start with Sketch</a></div>
+        <div class="compare-cell" role="cell"><a href="#contact" class="btn btn-primary">Start with Draft</a></div>
+        <div class="compare-cell" role="cell"><a href="#contact" class="btn btn-outline">Start with Final</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT / FOOTER ================= -->
+  <section class="cta-band" id="contact">
+    <h2>Tell me what you need it to do.<br>I'll tell you what to put in it.</h2>
+    <a href="mailto:you@example.com" class="btn btn-primary btn-large"><!-- EDIT: your email -->you@example.com</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-mark">
+    <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+      <path d="M9 9H19M9 14H19M9 19H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span><!-- EDIT: your business name --></span>
+  </div>
+  <p>&copy; <span id="year"></span> <!-- EDIT: your name / business -->. Built by hand, part by part.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
