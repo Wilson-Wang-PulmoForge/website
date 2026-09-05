@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PULSE BUILDS — Custom PCs Made Simple & Stress-Free</title>
+<meta name="description" content="Custom computer builds at three clear price points. 100% compatibility guaranteed, zero jargon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header id="site-header">
+  <nav class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="brand-badge" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+      <span>PULSE BUILDS</span>
+    </a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <div id="nav-links" class="nav-links">
+      <a href="#finder">Find Your Match</a>
+      <a href="#builds">Our Builds</a>
+      <a href="#why">Why It Matters</a>
+      <a href="#compare">Compare</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <h1>The Perfect PC, Curated Just For You.</h1>
+        <p class="lede">
+          We have three different computers available, all with hand-picked parts fit for your budget and preferences.        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#builds">Explore Ready Builds</a>
+          <a class="btn btn-secondary" href="#finder">Find What Fits You</a>
+        </div>
+        <div class="trust-bar">
+          <div class="trust-item">
+            <span class="trust-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <div>
+              <strong>100% Compatible Parts</strong>
+              <span>Parts guaranteed to fit</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 5-5"/></svg></span>
+            <div>
+              <strong>Easy To Understand</strong>
+              <span>Simple, Clear Explanations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="hero-card-glow"></div>
+        <div class="card-glass">
+          <div class="hero-image-slot" style="border-radius:16px;overflow:hidden;min-height:340px;">
+            <img src="pcparts.jpg" alt="Custom PC build" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder-section" id="finder">
+    <div class="wrap">
+      <div class="section-head text-center reveal">
+        <h2>Not sure which build is right for you?</h2>
+        <p>Click what best describes your primary goal and we will highlight the exact build you need.</p>
+      </div>
+
+      <div class="quiz-grid">
+        <button class="quiz-card active reveal" data-target="tier-1">
+          <div class="quiz-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <h3>School & Light Media</h3>
+          <p>Homework, checking emails, web browsing, light gaming and streaming videos. (Not recommended for high performance tasks)</p>
+        </button>
+        <button class="quiz-card reveal" data-target="tier-2">
+          <div class="quiz-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="12" rx="6"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="10.5" r="1"/><circle cx="18.5" cy="13" r="1"/></svg></div>
+          <h3>Casual Gaming & Work</h3>
+          <p>1080p gaming (like Minecraft or Valorant), minimal performance lags, and everyday productivity.</p>
+        </button>
+        <button class="quiz-card reveal" data-target="tier-3">
+          <div class="quiz-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L16 8L16 17L12 21L8 17L8 8Z"/><circle cx="12" cy="11" r="2"/><path d="M8 14L4 19L8 18Z"/><path d="M16 14L20 19L16 18Z"/></svg></div>
+          <h3>4K Gaming & Rendering</h3>
+          <p>4K hardcore gaming, heavy video editing, 4k instant streaming and zero performance slowdowns.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare" id="compare">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Which build fits your everyday life?</h2>
+      </div>
+
+      <div class="cmp-card reveal">
+        <div class="cmp-scroll">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th>Core Uses</th>
+                <th>Starter · $499</th>
+                <th class="featured-col">Balanced · $999</th>
+                <th>No Limit · $2,441</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Ideal Owner</th>
+                <td>Student or casual browser</td>
+                <td class="featured-col">Family PC or casual gamer</td>
+                <td>Creator, competitive gamer or for work</td>
+              </tr>
+              <tr>
+                <th>For Gaming</th>
+                <td>Browser-based and light games only</td>
+                <td class="featured-col">1080p, casual/esports games</td>
+                <td>4K, ultra graphics</td>
+              </tr>
+              <tr>
+                <th>Workload</th>
+                <td>Writing, emails, homework</td>
+                <td class="featured-col">Light video editing, multitasking</td>
+                <td>Heavy video exports, heavy video editing</td>
+              </tr>
+              <tr>
+                <th>Lifespan</th>
+                <td>1–2 years</td>
+                <td class="featured-col">3–4 years</td>
+                <td>5+ years</td>
+              </tr>
+              <tr>
+                <th>Storage Speed</th>
+                <td>Slower</td>
+                <td class="featured-col">Slower Mass Storage</td>
+                <td>Fast</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="builds" id="builds">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Three simple tiers. Zero guesswork.</h2>
+        <p>Every single part is hand-selected for complete compatibility and to fit to your preferences.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card reveal" id="tier-1" data-tier="1">
+          <div class="card-header">
+            <span class="tier-badge">Starter Build</span>
+            <h3>Everyday Essentials</h3>
+            <p class="tagline">Smooth performance for study, browsing, and light gaming.</p>
+          </div>
+          <div class="card-body">
+            <div class="price">
+              <span class="price-val">$499</span>
+              <span class="price-sub">total price</span>
+            </div>
+            
+            <ul class="feature-list">
+              <li><span class="check">✓</span> <strong>Intel Pentium G4400</strong> 3.3 GHz Dual-Core CPU</li>
+              <li><span class="check">✓</span> <strong>4GB Memory</strong> for basic multitasking</li>
+              <li><span class="check">✓</span> <strong>250GB Hard Drive</strong> for everyday storage</li>
+              <li><span class="check">✓</span> <strong>GeForce GT 710</strong> Basic 1080p Graphics</li>
+            </ul>
+
+            <button class="btn btn-secondary btn-small spec-toggle" aria-expanded="false">View full parts list</button>
+            
+            <div class="spec-sheet">
+              <div class="spec-row"><span class="label">CPU</span><span class="name">Intel Pentium G4400 3.3 GHz Dual-Core</span><span class="price-cell">$19.98</span></div>
+              <div class="spec-row"><span class="label">CPU Cooler</span><span class="name">Thermalright Assassin X 120 Refined SE</span><span class="price-cell">$16.11</span></div>
+              <div class="spec-row"><span class="label">Motherboard</span><span class="name">Asus H110M-C/CSM Micro ATX LGA1151</span><span class="price-cell">$73.98</span></div>
+              <div class="spec-row"><span class="label">Memory</span><span class="name">Kingston 4GB DDR4-2133 CL15</span><span class="price-cell">$42.79</span></div>
+              <div class="spec-row"><span class="label">Storage</span><span class="name">WD Scorpio Blue 250GB 5400 RPM</span><span class="price-cell">$30.87</span></div>
+              <div class="spec-row"><span class="label">Graphics</span><span class="name">MSI GT 710 1GD3H LP GeForce GT 710 1GB</span><span class="price-cell">$45.99</span></div>
+              <div class="spec-row"><span class="label">Case</span><span class="name">Cooler Master MasterBox Q300L</span><span class="price-cell">$39.99</span></div>
+              <div class="spec-row"><span class="label">Power</span><span class="name">Thermaltake Smart 500W 80+ Certified</span><span class="price-cell">$39.99</span></div>
+              <div class="spec-row"><span class="label">Operating System</span><span class="name">Microsoft Windows 10 Home Retail 32/64-bit</span><span class="price-cell">$139.99</span></div>
+              <div class="spec-row"><span class="label">Monitor</span><span class="name">Planar PLL2210MW 22.0" 1080p</span><span class="price-cell">$49.00</span></div>
+              <div class="spec-row total"><span class="name">Total Build Cost</span><span class="price-cell">$498.69</span></div>
+            </div>
+
+            <button class="btn btn-primary select-btn" data-tier-name="Starter — $499">Choose This Build</button>
+          </div>
+        </article>
+
+        <article class="product-card featured reveal" id="tier-2" data-tier="2">
+          <div class="ribbon"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg> Popular Choice</div>
+          <div class="card-header">
+            <span class="tier-badge highlight">Balanced Build</span>
+            <h3>Sweet-Spot Gaming</h3>
+            <p class="tagline">1080p gaming, streaming, and light content creation.</p>
+          </div>
+          <div class="card-body">
+            <div class="price">
+              <span class="price-val">$999</span>
+              <span class="price-sub">total price</span>
+            </div>
+
+            <ul class="feature-list">
+              <li><span class="check">✓</span> <strong>AMD Ryzen 5 8400F</strong> 4.2 GHz 6-Core CPU</li>
+              <li><span class="check">✓</span> <strong>8GB DDR5-5600</strong> Memory</li>
+              <li><span class="check">✓</span> <strong>2TB 7200 RPM HDD</strong> Storage</li>
+              <li><span class="check">✓</span> <strong>GeForce GT 1030</strong> Video Card</li>
+            </ul>
+
+            <button class="btn btn-secondary btn-small spec-toggle" aria-expanded="false">View full parts list</button>
+
+            <div class="spec-sheet">
+              <div class="spec-row"><span class="label">CPU</span><span class="name">AMD Ryzen 5 8400F 4.2 GHz 6-Core</span><span class="price-cell">$149.00</span></div>
+              <div class="spec-row"><span class="label">CPU Cooler</span><span class="name">Thermalright Aqua Elite V3 66.17 CFM</span><span class="price-cell">$54.90</span></div>
+              <div class="spec-row"><span class="label">Motherboard</span><span class="name">ASRock B850M Pro-A WiFi Micro ATX AM5</span><span class="price-cell">$119.99</span></div>
+              <div class="spec-row"><span class="label">Memory</span><span class="name">PNY Performance 8GB DDR5-5600 CL46</span><span class="price-cell">$119.99</span></div>
+              <div class="spec-row"><span class="label">Storage</span><span class="name">Western Digital Caviar Black 2TB 7200 RPM</span><span class="price-cell">$113.33</span></div>
+              <div class="spec-row"><span class="label">Graphics</span><span class="name">Asus GT1030-2G-CSM GeForce GT 1030 2GB</span><span class="price-cell">$99.99</span></div>
+              <div class="spec-row"><span class="label">Case</span><span class="name">Phanteks XT PRO ATX Mid Tower</span><span class="price-cell">$49.99</span></div>
+              <div class="spec-row"><span class="label">Power</span><span class="name">Rosewill VNW550 550W 80+ Certified</span><span class="price-cell">$45.99</span></div>
+              <div class="spec-row"><span class="label">Operating System</span><span class="name">Microsoft Windows 11 Home OEM 64-bit</span><span class="price-cell">$119.99</span></div>
+              <div class="spec-row"><span class="label">Monitor</span><span class="name">MSI Optix G24C 23.6" 144Hz Curved</span><span class="price-cell">$125.97</span></div>
+              <div class="spec-row total"><span class="name">Total Build Cost</span><span class="price-cell">$999.14</span></div>
+            </div>
+
+            <button class="btn btn-primary select-btn" data-tier-name="Balanced — $999">Choose This Build</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="tier-3" data-tier="3">
+          <div class="card-header">
+            <span class="tier-badge">Pro Build</span>
+            <h3>No-Limit Powerhouse</h3>
+            <p class="tagline">4K gaming, no lagging during heavy processes.</p>
+          </div>
+          <div class="card-body">
+            <div class="price">
+              <span class="price-val">$2,441</span>
+              <span class="price-sub">total price</span>
+            </div>
+
+            <ul class="feature-list">
+              <li><span class="check">✓</span> <strong>AMD Ryzen 5 5600G</strong> 3.9 GHz 6-Core CPU</li>
+              <li><span class="check">✓</span> <strong>Radeon RX 9070 XT 16GB</strong> GPU</li>
+              <li><span class="check">✓</span> <strong>3TB NVMe SSD</strong> (2TB + 1TB combined)</li>
+              <li><span class="check">✓</span> <strong>Dual 200Hz Monitors</strong> Included</li>
+            </ul>
+
+            <button class="btn btn-secondary btn-small spec-toggle" aria-expanded="false">View full parts list</button>
+
+            <div class="spec-sheet">
+              <div class="spec-row"><span class="label">CPU</span><span class="name">AMD Ryzen 5 5600G 3.9 GHz 6-Core</span><span class="price-cell">$199.99</span></div>
+              <div class="spec-row"><span class="label">CPU Cooler</span><span class="name">Noctua NH-D15 82.5 CFM</span><span class="price-cell">$109.95</span></div>
+              <div class="spec-row"><span class="label">Motherboard</span><span class="name">MSI MAG B550 TOMAHAWK MAX WIFI ATX AM4</span><span class="price-cell">$159.99</span></div>
+              <div class="spec-row"><span class="label">Memory</span><span class="name">G.Skill Ripjaws V 16GB (2x8GB) DDR4-3200 CL16</span><span class="price-cell">$119.99</span></div>
+              <div class="spec-row"><span class="label">Storage 1</span><span class="name">Samsung 990 Pro 2TB M.2 NVMe PCIe 4.0</span><span class="price-cell">$389.99</span></div>
+              <div class="spec-row"><span class="label">Storage 2</span><span class="name">Kingston NV3 1TB M.2 NVMe PCIe 4.0</span><span class="price-cell">$156.99</span></div>
+              <div class="spec-row"><span class="label">Graphics</span><span class="name">Gigabyte GAMING OC Radeon RX 9070 XT 16GB</span><span class="price-cell">$799.28</span></div>
+              <div class="spec-row"><span class="label">Case</span><span class="name">Montech XR ATX Mid Tower</span><span class="price-cell">$69.90</span></div>
+              <div class="spec-row"><span class="label">Power</span><span class="name">MSI MAG A750GL PCIE5 750W 80+ Gold</span><span class="price-cell">$79.99</span></div>
+              <div class="spec-row"><span class="label">Operating System</span><span class="name">Microsoft Windows 11 Home OEM 64-bit</span><span class="price-cell">$119.99</span></div>
+              <div class="spec-row"><span class="label">Monitor 1</span><span class="name">MSI MAG 244F 23.8" 200Hz</span><span class="price-cell">$117.50</span></div>
+              <div class="spec-row"><span class="label">Monitor 2</span><span class="name">MSI MAG 244F 23.8" 200Hz</span><span class="price-cell">$117.50</span></div>
+              <div class="spec-row total"><span class="name">Total Build Cost</span><span class="price-cell">$2,441.06</span></div>
+            </div>
+
+            <button class="btn btn-primary select-btn" data-tier-name="No Limit — $2,441">Choose This Build</button>
+          </div>
+        </article>
+
+      </div>
+      <p class="price-note">Note: Prices are based on current PCPartPicker live pricing.</p>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Think of your computer like a human body.</h2>
+        <p>No computer expertise needed, here is a simple breakdown of how each part operates and integrates like the human body.</p>
+        <p style="margin-top: 12px; font-weight: 600; color: var(--primary);"><em>(Click any card below for a popup reference image).</em></p>
+      </div>
+
+      <div class="anatomy-grid">
+
+        <div class="anatomy-card reveal" data-image="cpu.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M7 2v3M12 2v3M17 2v3M7 19v3M12 19v3M17 19v3M2 7h3M2 12h3M2 17h3M19 7h3M19 12h3M19 17h3"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Central Processing Unit (CPU)</span>
+            <h3>The Brain</h3>
+            <p>The CPU acts as the brain of a computer, every decision runs through here, it is responsible for interpreting and executing "instructions" from the software and hardware. The CPU processes almost every task you do on your computer.</p>
+          </div>
+        </div>
+
+        <div class="anatomy-card reveal" data-image="graphicscard.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Graphics Card</span>
+            <h3>The Eyes</h3>
+            <p>The graphics card acts as the eyes of a computer, every pixel you see on your computer is rendered and displayed on your computer screen by taking data from the CPU. The GPU is housed in the graphics card and acts as the main engine to process visual data.</p>
+          </div>
+        </div>
+
+        <div class="anatomy-card reveal" data-image="powersupply.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Power Supply (PSU)</span>
+            <h3>The Heart</h3>
+            <p>The PSU acts as the heart of a computer, it takes raw electricity from outlets and converts it into usable energy for you PC. The PSU is a core part of a computer.</p>
+          </div>
+        </div>
+
+        <div class="anatomy-card reveal" data-image="motherboard.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2.5"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M9.8 9.8L6.4 6.4M14.2 9.8l3.4-3.4M9.8 14.2l-3.4 3.4M14.2 14.2l3.4 3.4"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Motherboard</span>
+            <h3>The Spine</h3>
+            <p>The motherboard acts as the spine of a computer, it houses important parts like CPU and RAM into place, it takes electricity from the power supply and routes it to different places, and provides data pathways so different parts can communicate with eacher other.</p>
+          </div>
+        </div>
+
+        <div class="anatomy-card reveal" data-image="RAM.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Random Access Memory (RAM)</span>
+            <h3>Short-Term Memory</h3>
+            <p>RAM acts as the short-term memory of a computer, it holds the data that the processer needs at the moment to run apps and open files for multi-tasking and gaming/heavy tasks.</p>
+          </div>
+        </div>
+
+        <div class="anatomy-card reveal" data-image="SSD.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="12" x2="2" y2="12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Solid-State Drive (SSD)</span>
+            <h3>Long-Term Memory</h3>
+            <p>The SSD acts as the long-term memory of a computer, it holds data permanently; saving your operating system, games, apps and files even when your computer is off.</p>
+          </div>
+        </div>
+
+        <div class="anatomy-card reveal" data-image="case.jpg" title="Click to view part image">
+          <div class="anatomy-icon"><svg width="28" height="28" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="20" r="17" stroke-width="1.6" opacity="0.5"/><path d="M20 20L20 6"/><path d="M20 20L32.1 13"/><path d="M20 20L32.1 27"/><path d="M20 20L20 34"/><path d="M20 20L7.9 27"/><path d="M20 20L7.9 13"/><circle cx="20" cy="20" r="3.5" fill="currentColor" stroke="none"/></svg></div>
+          <div class="anatomy-content">
+            <span class="anatomy-part">Case & Cooling</span>
+            <h3>Skin & Lungs</h3>
+            <p>The case acts like the skin of a computer, it holds and protects your hardware from damage. The cooling system acts like the lungs of a computer, the fans prevent the PC from overheating by pushing hot air out of the case and pulling cold air in.  </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial" id="reviews">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Tested with real everyday buyers.</h2>
+        <p>My dad looked through the website, and I answered his questions.</p>
+      </div>
+
+      <div class="interview-grid">
+        <div class="interview-card reveal">
+          <div class="card-title">
+            <span class="chat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <h3>Questions They Asked Me</h3>
+          </div>
+          <div class="qa-item">
+            <div class="q-label">Question 1</div>
+            <p class="a-text">"Is the unlimited computer powerful enough to load local compressed large language models?"</p>
+            <p class="a-text" style="color:var(--muted); font-size:13px; margin-top:4px;"><strong>My Answer:</strong> Yes the unlimited computer is powerful enough to load local compressed large language models with minimal performance issues..</p>
+          </div>
+          <div class="qa-item">
+            <div class="q-label">Question 2</div>
+            <p class="a-text">"How much memory does the GPU have?"</p>
+            <p class="a-text" style="color:var(--muted); font-size:13px; margin-top:4px;"><strong>My Answer:</strong>16 GB of memory.</p>
+          </div>
+          <div class="qa-item">
+          </div>
+        </div>
+
+        <div class="interview-card highlight reveal">
+          <div class="card-title">
+            <span class="chat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2"/></svg></span>
+            <h3>The Result & Choice</h3>
+          </div>
+          <p class="a-text">My dad ultimately chose the unlimited tier because he felt like the other builds wouldn't be sufficent enough to do work on without performance slowdowns.</p>
+          
+          <div class="verdict-pill">
+            <span class="verdict-dot"></span>
+            Chose: <strong>Unlimited Build</strong>
+          
+      </div>
+    </div>
+  </section>
+
+  <div id="part-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <img id="modal-image" src="" alt="PC Part Reference">
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="f-brand">
+      <span class="brand-badge" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span> PULSE BUILDS
+    </div>
+    <div class="f-meta">
+      1.1 LAB — COMPUTER SHOPPING PROJECT · BUILT BY <span>Wilson Wang</span>
+    </div>
+    <div class="f-meta" id="year"></div>
+  </div>
+</footer>
+<button id="guide-floating-btn" class="guide-floating-btn" aria-label="Open Project Guide">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+  </svg>
+  <span>Project Guide</span>
+</button>
+
+<div id="guide-modal" class="guide-modal" aria-hidden="true" role="dialog" aria-labelledby="guide-modal-title">
+  <div class="guide-modal-backdrop" id="guide-backdrop"></div>
+  <div class="guide-modal-card">
+    <div class="guide-modal-header">
+      <div class="guide-modal-title-wrap">
+        <span class="guide-badge">1.1 Lab</span>
+        <h3 id="guide-modal-title">Computer Shopping Project Guide</h3>
+      </div>
+      <button id="guide-close-btn" class="guide-close-btn" aria-label="Close guide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="guide-modal-body">
+      <p class="guide-intro">Quick section walkthrough for the 1.1 Lab Computer Shopping Project.</p>
+      
+      <div class="guide-faq-list">
+        
+        <details class="guide-faq-item" open>
+          <summary class="guide-faq-question">
+            <span>1. How do I get to the Family Review & Interview?</span>
+            <span class="faq-chevron"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+          </summary>
+          <div class="guide-faq-answer">
+            <p>Click <strong>"Reviews"</strong> in the top navigation menu or scroll down to the <strong>Family Review</strong> section near the bottom. It contains the family interview, questions asked, interest breakdown, and why they selected the <strong>Unlimited Build</strong>.</p>
+            <a href="#reviews" class="guide-jump-link" id="guide-jump-reviews">Jump to Family Review ↓</a>
+          </div>
+        </details>
+
+        <details class="guide-faq-item">
+          <summary class="guide-faq-question">
+            <span>2. Where are the 3 price tiers ($500, $1000, No Limit)?</span>
+            <span class="faq-chevron"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+          </summary>
+          <div class="guide-faq-answer">
+            <p>Scroll to <strong>"Our Builds"</strong> or click <strong>"Compare"</strong>. The builds include:</p>
+            <ul>
+              <li><strong>Starter Tier ($499):</strong> Fits the $500 category budget.</li>
+              <li><strong>Balanced Tier ($999):</strong> Fits the $1000 category mid-range budget.</li>
+              <li><strong>No Limit Tier ($2,441):</strong> High-end performance build.</li>
+            </ul>
+            <p>Clicking <em>"View full parts list"</em> expands the full breakdown for each build.</p>
+          </div>
+        </details>
+
+        <details class="guide-faq-item">
+          <summary class="guide-faq-question">
+            <span>3. Where is the component analogy & explanation?</span>
+            <span class="faq-chevron"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+          </summary>
+          <div class="guide-faq-answer">
+            <p>Under the <strong>"Why It Matters"</strong> section, core PC components (CPU, RAM, etc.) are explained using real-world human body analogies to make the components simple to understand for potential buyers.</p>
+          </div>
+        </details>
+
+        <details class="guide-faq-item">
+          <summary class="guide-faq-question">
+            <span>4. How were component compatibility verified?</span>
+            <span class="faq-chevron"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+          </summary>
+          <div class="guide-faq-answer">
+            <p>All part's compatibility verified using <a href="https://pcpartpicker.com/" target="_blank" rel="noopener">PCPartPicker.com</a> to ensure full physical and electrical compatibility across computer parts.</p>
+          </div>
+        </details>
+
+        <details class="guide-faq-item">
+          <summary class="guide-faq-question">
+            <span>5. What is the seller introduction & pitch?</span>
+            <span class="faq-chevron"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+          </summary>
+          <div class="guide-faq-answer">
+            <p>The <strong>Hero Section</strong> at the top serves as our seller introduction and pitch, introducing Pulse Builds as a PC building service that focuses on full compatibility, simple explanations and builds fit to your preferences.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
